@@ -1,73 +1,66 @@
 :root {
   /* Base Colors */
-  --color-bg: #FFFFFF;
-  --color-bg-light: #F9F9F9;
+  --color-bg: #ffffff;
+  --color-bg-light: #f9f9f9;
+  --color-bg-lighter: #f0f0f0;
   --color-text-primary: #111111;
   --color-text-secondary: #888888;
-  --color-border: #E0E0E0;
-
-  /* Accent Colors */
-  --color-accent-red: #FF2D55;
-  --color-accent-blue: #4A90E2;
-  --color-accent-green: #00C853;
+  --color-border: #e0e0e0;
 
   /* Effects */
   --color-transparent-white: rgba(255, 255, 255, 0.05);
 }
 
 @font-face {
-  font-family: 'Clash Display';
+  font-family: "Clash Display";
   src: url("./assets/fonts/ClashDisplay/ClashDisplay-Extralight.otf");
   font-weight: 100;
 }
 
 @font-face {
-  font-family: 'Clash Display';
+  font-family: "Clash Display";
   src: url("./assets/fonts/ClashDisplay/ClashDisplay-Light.otf");
   font-weight: 200;
 }
 
 @font-face {
-  font-family: 'Clash Display';
+  font-family: "Clash Display";
   src: url("./assets/fonts/ClashDisplay/ClashDisplay-Regular.otf");
   font-weight: 300;
 }
 
 @font-face {
-  font-family: 'Clash Display';
+  font-family: "Clash Display";
   src: url("./assets/fonts/ClashDisplay/ClashDisplay-Medium.otf");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Clash Display';
+  font-family: "Clash Display";
   src: url("./assets/fonts/ClashDisplay/ClashDisplay-Semibold.otf");
   font-weight: 500;
 }
 
 @font-face {
-  font-family: 'Clash Display';
+  font-family: "Clash Display";
   src: url("./assets/fonts/ClashDisplay/ClashDisplay-Bold.otf");
   font-weight: 600;
 }
-
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Space Grotesk", sans-serif;
-  font-family: "Sora", sans-serif;
-  font-family: 'Clash Display'; */
 }
 
 html,
-body {
+body,
+#root {
   height: 100%;
   width: 100%;
 }
 
 body {
-  background-color: var(--color-bg-light);
+  background-color: var(--color-bg);
   color: var(--color-text-primary);
 }
