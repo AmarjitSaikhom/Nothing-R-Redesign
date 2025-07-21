@@ -5,10 +5,6 @@
   --color-bg-lighter: #f0f0f0;
   --color-text-primary: #111111;
   --color-text-secondary: #888888;
-  --color-border: #e0e0e0;
-
-  /* Effects */
-  --color-transparent-white: rgba(255, 255, 255, 0.05);
 }
 
 @font-face {
@@ -56,11 +52,12 @@
 html,
 body,
 #root {
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 
 body {
   background-color: var(--color-bg);
   color: var(--color-text-primary);
 }
+

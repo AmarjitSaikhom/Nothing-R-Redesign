@@ -4,9 +4,442 @@
 }
 
 .hero {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.hero-content {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #010101;
+}
+
+.hero-content h1 {
+  width: 94%;
+  font-size: 2.5rem;
+  font-family: "Clash Display";
+  text-align: center;
+  line-height: 1;
+}
+
+.hero-content p {
+  width: 90%;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-family: "Sora";
+  text-align: left;
+  color: var(--color-bg);
+}
+
+.hero-btn {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  border: none;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero-btn i {
+  margin-left: 10px;
+}
+
+.hero-btn:hover {
+  background-color: #ffffffe8;
+}
+
+.hero-btn:active {
+  scale: 0.95;
+}
+
+.hero-image {
+  width: 100%;
+  height: 50%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 80%;
+    margin-bottom: 40px;
+  }
+
+  .hero-content {
+    height: 40%;
+    gap: 30px;
+  }
+
+  .hero-content h1 {
+    width: 60%;
+    font-size: 2.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .hero-btn {
+    padding: 0.8rem 1.6rem;
+  }
+
+  .hero-image {
+    height: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    height: 100%;
+    flex-direction: row;
+    margin-bottom: 80px;
+  }
+
+  .hero-content {
+    width: 40%;
+    height: 100%;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 40px;
+    padding-top: 130px;
+    background-color: var(--color-bg);
+  }
+
+  .hero-content h1 {
     width: 100%;
+    font-size: 3rem;
+    text-align: left;
+    color: var(--color-text-primary);
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+    color: var(--color-text-primary);
+    text-align: left;
+    margin-bottom: 80px;
+  }
+
+  .hero-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+  }
+
+  .hero-btn:hover {
+    background-color: #333;
+  }
+
+  .hero-image {
+    width: 60%;
+    height: 100%;
+  }
+}
+
+/* HEADPHONE 1 SECTION */
+
+.headphone_1 {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.headphone_1_image {
+  width: 100%;
+  height: 50%;
+}
+
+.headphone_1_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.headphone_1_text {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  gap: 20px;
+}
+
+.headphone_1_text h2 {
+  width: 94%;
+  font-size: 2.5rem;
+  font-family: "Clash Display";
+  text-align: left;
+  line-height: 1;
+}
+
+.headphone_1_text p {
+  width: 94%;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-family: "Sora";
+  text-align: left;
+  color: var(--color-text-primary);
+  margin-bottom: 30px;
+}
+
+.headphone_1_text .explore-btn {
+  background: #000;
+  border: 1px solid #fff;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.headphone_1_text .explore-btn:hover {
+  background-color: #201f1fdc;
+}
+
+.headphone_1_text .explore-btn:active {
+  scale: 0.95;
+}
+
+@media (min-width: 768px) {
+  .headphone_1 {
+    height: 80%;
+    margin-bottom: 40px;
+  }
+
+  .headphone_1_image {
+    width: 100%;
+    height: 60%;
+  }
+
+  .headphone_1_text {
+    height: 40%;
+    align-items: flex-start;
+    padding-top: 40px;
+    gap: 30px;
+  }
+
+  .headphone_1_text h2 {
+    font-size: 2.8rem;
+  }
+
+  .headphone_1_text p {
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  .headphone_1_text .explore-btn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .headphone_1 {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  .headphone_1_image {
+    width: 70%;
+    height: 100%;
+  }
+
+  .headphone_1_text {
+    width: 30%;
+    height: 100%;
+    align-items: start;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-left: 30px;
+    padding-bottom: 80px;
+  }
+
+  .headphone_1_text h2 {
+    width: 100%;
+    font-size: 2.2rem;
+  }
+
+  .headphone_1_text p {
+    width: 100%;
+    font-size: 0.8rem;
+    margin-bottom: 80px;
+  }
+
+  .headphone_1_text .explore-btn {
+    padding: 0.7rem 1.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* PHONE 3A PRO SECTION */
+.phone_3a_pro {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.phone_3a_pro video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video_overlay_text {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.video_overlay_text h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  font-family: "Clash Display";
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.video_overlay_text p {
+  font-size: 1rem;
+  font-family: "Sora";
+  margin-bottom: 1rem;
+}
+
+.video_overlay_text .explore_btn {
+  font-family: "Sora";
+  padding: 0.75rem 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid white;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.explore_btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.video_text_content {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .phone_3a_pro {
+    height: 80%;
+    margin-bottom: 40px;
+  }
+
+  .video_overlay_text {
+    top: 80%;
+  }
+
+  .video_overlay_text h2 {
+    font-size: 2.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .video_overlay_text p {
+    font-size: 1.1rem;
+  }
+
+  .explore_btn {
+    font-size: 1.2rem;
+    font-family: "Sora";
+  }
+
+  .explore_btn:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+@media (min-width: 1024px) {
+  .phone_3a_pro {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    overflow: hidden;
+    margin-bottom: 80px;
+  }
+
+  .phone_3a_pro video {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .video_overlay_text {
+    display: none;
+  }
+
+  .video_text_content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    width: 40%;
+    height: 100%;
+    padding-right: 20px;
+  }
+
+  .video_text_content h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: "Clash Display";
+  }
+
+  .video_text_content p {
+    font-size: 1rem;
+    font-family: "Sora";
+    line-height: 1.2;
+    margin-bottom: 60px;
+  }
+
+  .video_text_content .explore_btn {
+    font-size: 0.9rem;
+    font-family: "Sora";
+    padding: 0.6rem 1.8rem;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .video_text_content .explore_btn:hover {
+    background-color: #474444;
+  }
+
+  .video_text_content .explore_btn:active {
+    scale: 0.95;
+  }
 }
