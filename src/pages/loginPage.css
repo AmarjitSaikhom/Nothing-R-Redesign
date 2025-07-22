@@ -1,0 +1,194 @@
+.loginPage {
+  width: 100%;
+  height: 94.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_container {
+  width: 90%;
+  height: 80%;
+  position: relative;
+  box-shadow: 2px 1px 9px #8884849e, inset 2px 1px 14px #e9e5e561;
+}
+
+.login_text {
+  display: none;
+}
+
+.login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 16px;
+}
+
+.login h5 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  font-family: "Sora";
+}
+
+.login form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login form input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #9f9b9ba4;
+  outline: none;
+  font-size: 0.9rem;
+  font-family: "Sora";
+}
+
+.login form .continue_with {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.login form .continue_with button {
+  width: 100%;
+  padding: 0.65rem;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid #000;
+  font-size: 0.9rem;
+  font-family: "Sora";
+}
+
+.login form .continue_with button:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.continue_with button i {
+  font-size: 1.1rem;
+  font-family: "Sora";
+  margin-right: 20px;
+}
+
+.login p {
+  font-size: 0.9rem;
+  font-family: "Sora";
+}
+
+.login .privacy_policy {
+  font-size: 0.9rem;
+  font-family: "Sora";
+  color: #000;
+}
+
+.login .link_tag {
+  font-size: 0.9rem;
+  font-family: "Sora";
+  color: red;
+}
+
+.login .login_btn {
+  width: 100%;
+  padding: 0.65rem;
+  border-radius: 20px;
+  background-color: #ef3c45;
+  border: none;
+  font-size: 0.9rem;
+  font-family: "Sora";
+  color: #fff;
+}
+
+.login .login_btn:hover {
+  background-color: #b7151c;
+}
+
+@media (min-width: 768px) {
+  .login_container {
+    height: 60%;
+  }
+
+  .login_text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+  }
+
+  .login_text .signUp_link {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: "Clash Display";
+    color: #fffffff6;
+    text-transform: uppercase;
+  }
+
+  .login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .login_container {
+    width: 50%;
+    height: 80%;
+  }
+
+  .login {
+    gap: 30px;
+    padding: 0 40px;
+  }
+
+  .login form .continue_with {
+    margin-top: 30px;
+  }
+
+  .login form .continue_with button {
+    border-radius: 30px;
+  }
+
+  .continue_with button i {
+    margin-right: 30px;
+  }
+
+  .login p {
+    font-size: 0.8rem;
+  }
+
+  .login .privacy_policy {
+    font-size: 0.8rem;
+  }
+
+  .login .link_tag {
+    font-size: 0.8rem;
+  }
+
+  .login .login_btn {
+    border-radius: 30px;
+  }
+
+  .login .login_btn:hover {
+    background-color: #b7151c;
+  }
+}

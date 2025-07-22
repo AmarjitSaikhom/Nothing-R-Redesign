@@ -1,0 +1,192 @@
+.registerPage {
+  width: 100%;
+  height: 94.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register_container {
+  width: 90%;
+  height: 80%;
+  position: relative;
+  box-shadow: 2px 1px 9px #8884849e, inset 2px 1px 14px #e9e5e561;
+}
+
+.register_text {
+  display: none;
+}
+
+.register {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 16px;
+}
+
+.register h5 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  font-family: "Sora";
+}
+
+.register form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.register form input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #9f9b9ba4;
+  outline: none;
+  font-size: 0.9rem;
+  font-family: "Sora";
+}
+
+.register form .checkbox {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.register form .checkbox input {
+  width: 15px;
+  height: 15px;
+}
+
+.register form .checkbox p {
+  font-size: 0.8rem;
+  font-family: "Sora";
+}
+
+.register form .checkbox p .privacy_policy {
+  font-size: 0.8rem;
+  font-family: "Sora";
+  color: #000;
+}
+
+.register form .continue_with {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.register form .continue_with button {
+  width: 100%;
+  padding: 0.65rem;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid #000;
+  font-size: 0.9rem;
+  font-family: "Sora";
+}
+
+.register form .continue_with button:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.continue_with button i {
+  font-size: 1.1rem;
+  font-family: "Sora";
+  margin-right: 20px;
+}
+
+.register .login_btn {
+  width: 100%;
+  padding: 0.65rem;
+  border-radius: 20px;
+  background-color: #ef3c45;
+  border: none;
+  font-size: 0.9rem;
+  font-family: "Sora";
+  color: #fff;
+}
+
+.register .login_btn:hover {
+  background-color: #b7151c;
+}
+
+@media (min-width: 768px) {
+  .register_container {
+    height: 60%;
+  }
+
+  .register_text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+  }
+
+  .register_text .login_link {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: "Clash Display";
+    color: #fffffff6;
+    text-transform: uppercase;
+  }
+
+  .register {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .register_container {
+    width: 50%;
+    height: 80%;
+  }
+
+  .register {
+    gap: 30px;
+    padding: 0 40px;
+  }
+
+  .register form .continue_with {
+    margin-top: 30px;
+  }
+
+  .register form .continue_with button {
+    border-radius: 30px;
+  }
+
+  .continue_with button i {
+    margin-right: 30px;
+  }
+
+  .register form .checkbox p {
+    font-size: 0.8rem;
+  }
+
+  .register form .checkbox .privacy_policy {
+    font-size: 0.8rem;
+  }
+
+  .register .login_btn {
+    border-radius: 30px;
+  }
+}
