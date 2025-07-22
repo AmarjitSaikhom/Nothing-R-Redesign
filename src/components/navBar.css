@@ -5,11 +5,13 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
-  background: var(--color-bg-light);
+  background-color: #000;
+  color: #fff;
   position: sticky;
   top: 0;
   left: 0;
   z-index: 99;
+  padding: 0 10px;
 }
 
 .nav_logo {
@@ -20,11 +22,19 @@
   font-family: "Clash Display";
   font-size: 1rem;
   font-weight: 400;
-  color: var(--color-text-primary);
+  color: #fff;
   cursor: pointer;
 }
 
 .nav_menu {
+  display: none;
+}
+
+.cart {
+  display: none;
+}
+
+.side_menu {
   width: 30px;
   height: 30px;
   display: flex;
@@ -33,11 +43,11 @@
   cursor: pointer;
 }
 
-.nav_menu i {
+.side_menu i {
   font-size: 1.6rem;
 }
 
-.nav_menu_list {
+.nav_side_list {
   width: 70%;
   position: absolute;
   top: 50px;
@@ -77,11 +87,15 @@
 }
 
 @media (min-width: 768px) {
+  .nav_Bar {
+    padding: 0 40px;
+  }
+
   .nav_logo h3 {
     font-size: 1.2rem;
   }
 
-  .nav_menu i {
+  .side_menu i {
     font-size: 2rem;
   }
 
@@ -97,27 +111,60 @@
 }
 
 @media (min-width: 1024px) {
-  html {
-    font-size: clamp(16px, 1vw, 20px);
+  .nav_Bar {
+    padding: 0 50px;
   }
 
   .nav_logo h3 {
     font-size: 1.2rem;
   }
 
-  .nav_menu i {
-    font-size: 2rem;
+  .nav_menu {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Space Grotesk";
   }
 
-  .nav_menu_list {
-    width: 25%;
-    transition: opacity 0.3s linear, right 0.5s linear;
+  .nav_menu .menu_link {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-bottom: 2px solid transparent;
   }
 
-  .nav_list {
-    height: 50px;
-    padding: 0 40px;
-    font-size: 1.3rem;
-    font-weight: 400;
+  .nav_menu .menu_link:hover {
+    color: #b74b4b;
+    border-bottom: 2px solid #b74b4b;
+  }
+
+  .side_menu {
+    display: none;
+  }
+
+  .cart {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .cart i {
+    font-size: 1.2rem;
+  }
+
+  .cart:hover {
+    background-color: #ffffff2c;
+  }
+
+  .cart:active {
+    scale: 0.95;
   }
 }
