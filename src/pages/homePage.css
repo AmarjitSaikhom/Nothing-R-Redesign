@@ -23,12 +23,13 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
+  padding-top: 10px;
   background-color: #010101;
 }
 
 .hero-content h1 {
   width: 94%;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-family: "Clash Display";
   text-align: center;
   line-height: 1;
