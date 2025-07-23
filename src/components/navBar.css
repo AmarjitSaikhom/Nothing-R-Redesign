@@ -8,6 +8,7 @@
   color: #fff;
   position: sticky;
   top: 0;
+  left: 0;
   z-index: 100;
   padding: 0 10px;
   border-bottom: 1px solid #535151d2;
