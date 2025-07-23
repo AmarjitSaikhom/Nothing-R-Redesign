@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import './homePage.css'
 
 const HomePage = () => {
@@ -47,7 +46,7 @@ const HomePage = () => {
           muted
           loop
           playsInline
-          src='src/assets/video/phone(3a) Pro medium.mp4'
+          src='src\assets\video\phone(3a) Pro medium.mp4'
         >
           Your browser does not support the video tag.
         </video>

@@ -157,7 +157,7 @@
 
 @media (min-width: 1024px) {
   .register_container {
-    width: 50%;
+    width: 80%;
     height: 80%;
   }
 
@@ -188,5 +188,12 @@
 
   .register .login_btn {
     border-radius: 30px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .register_container {
+    width: 50%;
+    height: 80%;
   }
 }
