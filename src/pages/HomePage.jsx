@@ -3,7 +3,7 @@ import './homePage.css'
 
 const HomePage = () => {
   return (
-    <div className='homePage'>
+    <>
       <section className="hero">
         <div className="hero-content">
           <h1>Meet the Future: Phone 3</h1>
@@ -59,7 +59,7 @@ const HomePage = () => {
         </div>
 
       </section>
-    </div>
+    </>
   )
 }
 

@@ -2,7 +2,6 @@ import { useLocation } from "react-router-dom";
 import MainRoutes from "./routes/MainRoutes"
 import NavBar from "./components/NavBar"
 import Footer from "./components/Footer"
-import "./App.css"
 
 const App = () => {
   const location = useLocation();
@@ -12,9 +11,11 @@ const App = () => {
 
   return (
     <>
-      <NavBar />
-      <MainRoutes />
-      {!isAccountPage && <Footer />}
+      <div className="main_container">
+        <NavBar />
+        <MainRoutes />
+        {!isAccountPage && <Footer />}
+      </div>
     </>
 
   )
