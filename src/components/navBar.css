@@ -37,6 +37,8 @@
 .side_menu {
   width: 30px;
   height: 30px;
+  border: none;
+  outline: none;
   display: flex;
   align-items: center;
   justify-content: center;

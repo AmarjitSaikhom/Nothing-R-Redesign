@@ -9,16 +9,18 @@ const NavBar = () => {
     const hideOnRoutes = ["/login", "/register"];
     const isAccountPage = hideOnRoutes.includes(location.pathname);
 
-    const handleNavMenu = () => {
-        if (showMenu) {
-            setShowMenu(false)
-        } else {
-            setShowMenu(true);
-        }
-    }
+    const handleNavMenu = () => setShowMenu((prev) => !prev);
 
 
-
+    const navLinks = [
+        { label: "Store", to: "/product" },
+        { label: "Phones", to: "/product/phone" },
+        { label: "Audio", to: "/product/audio" },
+        { label: "Watches", to: "/product/watches" },
+        { label: "Accessories", to: "/product/accessories" },
+        { label: "About", to: "/about" },
+        { label: "Account", to: "/login" },
+    ];
 
 
     return (
@@ -30,13 +32,11 @@ const NavBar = () => {
             {!isAccountPage && (
                 <>
                     <div className="nav_menu">
-                        <NavLink className="menu_link" to={'/productDetail'}>Store</NavLink>
-                        <NavLink className={'menu_link'} to={'/productDetail'}>Phones</NavLink>
-                        <NavLink className={'menu_link'} to={'/productDetail'}>Audio</NavLink>
-                        <NavLink className={'menu_link'} to={'/productDetail'}>Watches</NavLink>
-                        <NavLink className={'menu_link'} to={'/productDetail'}>Accessories</NavLink>
-                        <NavLink className={'menu_link'} to={'/about'}>About</NavLink>
-                        <NavLink className={'menu_link'} to={'/login'}>Account</NavLink>
+                        {navLinks.map((link) => (
+                            <NavLink key={link.to} className="menu_link" to={link.to}>
+                                {link.label}
+                            </NavLink>
+                        ))}
                     </div>
 
 
@@ -44,24 +44,19 @@ const NavBar = () => {
                         <i className="ri-shopping-bag-line"></i>
                     </div>
 
-                    <div onClick={handleNavMenu} className="side_menu">
+                    <button onClick={handleNavMenu} className="side_menu" aria-label="Toggle Menu">
                         {showMenu ? <i className="ri-close-line"></i> : <i className="ri-equal-line"></i>}
-                    </div>
+                    </button>
 
-                    <div className={`nav_side_list ${showMenu ? '' : 'hide_nav_list'}`}>
-                        <NavLink className={'nav_list'} to={'/product'}>Store</NavLink>
-                        <div className="line"></div>
-                        <NavLink className={'nav_list'}>Phones</NavLink>
-                        <div className="line"></div>
-                        <NavLink className={'nav_list'}>Audio</NavLink>
-                        <div className="line"></div>
-                        <NavLink className={'nav_list'}>Watches</NavLink>
-                        <div className="line"></div>
-                        <NavLink className={'nav_list'}>Accessories</NavLink>
-                        <div className="line"></div>
-                        <NavLink className={'nav_list'} to={'/about'}>About</NavLink>
-                        <div className="line"></div>
-                        <NavLink className={'nav_list'} to={'/login'}>Account</NavLink>
+                    <div className={`nav_side_list ${showMenu ? '' : 'hide_nav_list'}`} onClick={() => setShowMenu(false)}>
+                        {navLinks.map((link) => (
+                            <div key={link.to}>
+                                <NavLink className="nav_list" to={link.to}>
+                                    {link.label}
+                                </NavLink>
+                                <div className="line"></div>
+                            </div>
+                        ))}
                     </div>
                 </>
             )}
