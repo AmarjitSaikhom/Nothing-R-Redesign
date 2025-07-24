@@ -19,7 +19,7 @@ const HomePage = () => {
 
       <section className='headphone_1'>
         <div className="headphone_1_image">
-          <img src="/image/home-page-image/headphone-1.avif" alt="headphone (1)" />
+          <img src="/image/home-page-image/headphone-1.avif" alt="headphone (1)" loading="lazy" />
         </div>
         <div className="headphone_1_text">
           <h2>Meet Headphone (1)</h2>
@@ -42,12 +42,14 @@ const HomePage = () => {
         </div>
 
         <video
+          preload="metadata"
           autoPlay
           muted
           loop
           playsInline
-          src='/video/phone-3a-pro-medium.mp4'
+
         >
+          <source src='/video/phone-3a-pro-medium.mp4' type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 

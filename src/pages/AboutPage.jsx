@@ -40,9 +40,11 @@ const AboutPage = () => {
         <div className="about_us_video" onClick={handleVideoClick}>
           <video
             ref={videoRef}
+            preload="metadata"
             loop
             playsInline
-            src="/video/about-video.mp4">
+          >
+            <source src="/video/about-video.mp4" type="video/mp4" />
           </video>
 
           <div className={`about_video_overlay ${isPlaying ? 'hide_about_video_overlay' : ''}`}>
@@ -58,49 +60,49 @@ const AboutPage = () => {
         <div className="investor">
           <div className="investor_card">
             <div className="investor_image">
-              <img src="/image/about-page-image/highland-europe.webp" alt="" />
+              <img src="/image/about-page-image/highland-europe.webp" alt="" loading="lazy" />
             </div>
             <h4>Highland Europe</h4>
           </div>
           <div className="investor_card">
             <div className="investor_image">
-              <img src="/image/about-page-image/google-ventures.webp" alt="" />
+              <img src="/image/about-page-image/google-ventures.webp" alt="" loading="lazy" />
             </div>
             <h4>Google Ventures</h4>
           </div>
           <div className="investor_card">
             <div className="investor_image">
-              <img src="/image/about-page-image/steve-huffman.jpg" alt="" />
+              <img src="/image/about-page-image/steve-huffman.jpg" alt="" loading="lazy" />
             </div>
             <h4>Steve Huffman</h4>
           </div>
           <div className="investor_card">
             <div className="investor_image">
-              <img src="/image/about-page-image/garry-tan.webp" alt="" />
+              <img src="/image/about-page-image/garry-tan.webp" alt="" loading="lazy" />
             </div>
             <h4>Garry Tan</h4>
           </div>
           <div className="investor_card">
             <div className="investor_image">
-              <img src="/image/about-page-image/cristina-stenback.jpg" alt="" />
+              <img src="/image/about-page-image/cristina-stenback.jpg" alt="" loading="lazy" />
             </div>
             <h4>Cristina Stenback</h4>
           </div>
           <div className="investor_card">
             <div className="investor_image">
-              <img src="/image/about-page-image/the-weeknd.webp" alt="" />
+              <img src="/image/about-page-image/the-weeknd.webp" alt="" loading="lazy" />
             </div>
             <h4>The Weeknd</h4>
           </div>
           <div className="investor_card">
             <div className="investor_image">
-              <img src="/image/about-page-image/tony-fadell.webp" alt="" />
+              <img src="/image/about-page-image/tony-fadell.webp" alt="" loading="lazy" />
             </div>
             <h4>Tony Fadell</h4>
           </div>
           <div className="investor_card">
             <div className="investor_image">
-              <img src="/image/about-page-image/casey-neistat.webp" alt="" />
+              <img src="/image/about-page-image/casey-neistat.webp" alt="" loading="lazy" />
             </div>
             <h4>Casey Neistat</h4>
           </div>
