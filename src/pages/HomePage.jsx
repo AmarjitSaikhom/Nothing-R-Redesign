@@ -13,13 +13,13 @@ const HomePage = () => {
           <button className="hero-btn">Shop Now <i className="ri-arrow-right-line"></i></button>
         </div>
         <div className="hero-image">
-          <img src="public/image/home-page-image/phone-3-hero-black.avif" alt="Phone (3)" />
+          <img src="/image/home-page-image/phone-3-hero-black.avif" alt="Phone (3)" />
         </div>
       </section>
 
       <section className='headphone_1'>
         <div className="headphone_1_image">
-          <img src="public/image/home-page-image/headphone-1.avif" alt="headphone (1)" />
+          <img src="/image/home-page-image/headphone-1.avif" alt="headphone (1)" />
         </div>
         <div className="headphone_1_text">
           <h2>Meet Headphone (1)</h2>
@@ -46,7 +46,7 @@ const HomePage = () => {
           muted
           loop
           playsInline
-          src='public/video/phone-3a-pro-medium.mp4'
+          src='/video/phone-3a-pro-medium.mp4'
         >
           Your browser does not support the video tag.
         </video>
