@@ -4,10 +4,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   color: #fff;
-  overflow: hidden;
   margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #010101;
 }
 
 .hero-content {
@@ -18,8 +18,6 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  padding-top: 10px;
-  background-color: #010101;
 }
 
 .hero-content h1 {
@@ -105,37 +103,29 @@
 @media (min-width: 1024px) {
   .hero {
     height: 100%;
-    flex-direction: row;
     margin-bottom: 80px;
   }
 
   .hero-content {
-    width: 40%;
-    height: 100%;
-    align-items: start;
-    justify-content: flex-start;
+    height: 40%;
+    justify-content: center;
     gap: 40px;
-    padding-top: 130px;
-    background-color: var(--color-bg);
   }
 
   .hero-content h1 {
-    width: 100%;
-    font-size: 3rem;
-    text-align: left;
-    color: var(--color-text-primary);
+    width: 90%;
+    font-size: 2.8rem;
+    font-weight: 500;
+    text-align: center;
   }
 
   .hero-content p {
     font-size: 1.1rem;
-    color: var(--color-text-primary);
-    text-align: left;
-    margin-bottom: 80px;
+    text-align: center;
+    margin-bottom: 40px;
   }
 
   .hero-btn {
-    background-color: #000;
-    color: #fff;
     border: none;
     padding: 0.8rem 2rem;
   }
@@ -145,8 +135,8 @@
   }
 
   .hero-image {
-    width: 60%;
-    height: 100%;
+    width: 100%;
+    height: 60%;
   }
 }
 
@@ -155,6 +145,8 @@
 .headphone_1 {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
 }
 
@@ -229,7 +221,7 @@
   .headphone_1_text {
     height: 40%;
     align-items: flex-start;
-    padding-top: 40px;
+    padding: 40px;
     gap: 30px;
   }
 
@@ -251,25 +243,23 @@
 
 @media (min-width: 1024px) {
   .headphone_1 {
-    height: 80%;
-    display: flex;
+    height: 50%;
+    flex-direction: row;
     align-items: center;
     margin-bottom: 80px;
   }
 
   .headphone_1_image {
-    width: 70%;
+    width: 60%;
     height: 100%;
   }
 
   .headphone_1_text {
-    width: 30%;
+    width: 40%;
     height: 100%;
     align-items: start;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 10px;
-    padding-left: 30px;
-    padding-bottom: 80px;
   }
 
   .headphone_1_text h2 {
@@ -289,12 +279,17 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .headphone_1 {
+    height: 90%;
+  }
+}
+
 /* PHONE 3A PRO SECTION */
 .phone_3a_pro {
   position: relative;
   width: 100%;
-  height: 70%;
-  overflow: hidden;
+  height: 80%;
   margin-bottom: 20px;
 }
 
@@ -310,7 +305,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
+  color: #ffffff;
 }
 
 .video_overlay_text h2 {
@@ -333,7 +328,6 @@
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
   border: 1px solid white;
-  border-radius: 999px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -379,10 +373,9 @@
 
 @media (min-width: 1024px) {
   .phone_3a_pro {
-    height: 100%;
+    height: 50%;
     display: flex;
     align-items: center;
-    overflow: hidden;
     margin-bottom: 80px;
   }
 
@@ -397,14 +390,14 @@
   }
 
   .video_text_content {
+    width: 40%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
     gap: 10px;
-    width: 40%;
-    height: 100%;
-    padding-right: 20px;
+    padding: 40px;
   }
 
   .video_text_content h2 {
@@ -437,5 +430,11 @@
 
   .video_text_content .explore_btn:active {
     scale: 0.95;
+  }
+}
+
+@media (min-width: 1200px) {
+  .phone_3a_pro {
+    height: 90%;
   }
 }
