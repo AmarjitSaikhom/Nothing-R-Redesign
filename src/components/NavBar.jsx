@@ -49,8 +49,8 @@ const NavBar = () => {
                     </button>
 
                     <div className={`nav_side_list ${showMenu ? '' : 'hide_nav_list'}`} onClick={() => setShowMenu(false)}>
-                        {navLinks.map((link) => (
-                            <div key={link.to}>
+                        {navLinks.map((link, index) => (
+                            <div key={link.to} style={{ animationDelay: `${index * 0.1}s` }}>
                                 <NavLink className="nav_list" to={link.to}>
                                     {link.label}
                                 </NavLink>
