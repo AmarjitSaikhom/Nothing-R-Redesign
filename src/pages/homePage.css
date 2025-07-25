@@ -285,6 +285,218 @@
   }
 }
 
+/* WATCH SECTION */
+
+.watch-section {
+  padding: 2rem 1rem;
+  font-family: "Sora";
+}
+
+.watch-section h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.watch-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.watch-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.3rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  background: #f9f9f9;
+  cursor: pointer;
+}
+
+.watch-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.watch-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  transform: translateY(0);
+  transition: transform 0.4s ease;
+}
+
+.watch-overlay h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-shadow: 2px 2px 3px black;
+  margin-bottom: 0.3rem;
+}
+
+.watch-overlay p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-shadow: 2px 2px 3px black;
+  margin-bottom: 0.5rem;
+}
+
+.watch-overlay button {
+  padding: 0.4rem 0.9rem;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 1rem;
+  text-shadow: 1px 1px 3px white;
+  font-weight: 300;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 768px) {
+  .watch-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .watch-overlay {
+    transform: translateY(100%);
+  }
+
+  .watch-card:hover .watch-overlay {
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 1024px) {
+  .watch-section {
+    padding: 2rem 4rem;
+  }
+
+  .watch-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .watch-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .watch-card {
+    height: 450px;
+  }
+
+  .watch-overlay {
+    transform: translateY(100%);
+  }
+
+  .watch-card:hover .watch-overlay {
+    transform: translateY(0);
+  }
+
+  .watch-overlay h4 {
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 3px black;
+    margin-bottom: 0.4rem;
+  }
+
+  .watch-overlay p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 0.6rem;
+  }
+
+  .watch-overlay button {
+    padding: 0.6rem 1.4rem;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1180px) {
+  .watch-section {
+    padding: 2rem 10rem;
+  }
+}
+
+/* WHY CMF SECTION */
+
+.why-cmf {
+  padding: 2rem 1rem;
+  background-color: #f5f5f5;
+  text-align: center;
+  font-family: "Sora";
+}
+
+.why-cmf h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.why-cmf-features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.why-cmf-card {
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-cmf-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.why-cmf-card .icon {
+  font-size: 2rem;
+  color: #ff6f61;
+  margin-bottom: 0.75rem;
+}
+
+.why-cmf-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.why-cmf-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+@media (min-width: 640px) {
+  .why-cmf-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .why-cmf-features {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .why-cmf {
+    padding: 4rem 2rem;
+  }
+
+  .why-cmf h2 {
+    font-size: 2rem;
+  }
+}
+
 /* PHONE 3A PRO SECTION */
 .phone_3a_pro {
   position: relative;
@@ -436,5 +648,188 @@
 @media (min-width: 1180px) {
   .phone_3a_pro {
     height: 90%;
+  }
+}
+
+/* EARPHONE SECTION */
+
+.earphones-section {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  font-family: "Sora";
+}
+
+.earphones-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.earphones-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+.earphone-card {
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.earphone-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.earphone-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.earphone-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.earphone-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 1rem;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 0.4s ease;
+  text-align: left;
+}
+
+.earphone-card:hover .earphone-info {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.earphone-info h4 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0;
+  font-weight: 600;
+}
+
+.earphone-info p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: 0.25rem 0 0;
+  color: #bbb;
+}
+
+@media (min-width: 600px) {
+  .earphones-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .earphones-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* CMF PHONE 2 PRO SECTION */
+
+.cmf-pro-section {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 2rem 0;
+}
+
+.cmf-pro-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cmf-pro-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cmf-pro-content {
+  color: #fff;
+  z-index: 2;
+  padding: 1rem;
+}
+
+.cmf-pro-content h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: "Clash Display";
+  margin-bottom: 0.5rem;
+}
+
+.cmf-pro-content p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: "Clash Display";
+  margin-bottom: 1rem;
+}
+
+.cmf-pro-content button {
+  padding: 0.8rem 1.5rem;
+  background: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: "Sora";
+  color: #000;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cmf-pro-content button:hover {
+  background: #f90;
+  color: #fff;
+}
+
+@media (min-width: 640px) {
+  .cmf-pro-section {
+    margin: 3rem 0;
+  }
+
+  .cmf-pro-content h1 {
+    font-size: 2.6rem;
+    font-weight: 400;
+    margin-bottom: 0.6rem;
+  }
+
+  .cmf-pro-content p {
+    font-size: 1.3rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .cmf-pro-content button {
+    padding: 0.9rem 1.6rem;
+    font-size: 1.2rem;
   }
 }
