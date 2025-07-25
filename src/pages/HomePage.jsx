@@ -2,9 +2,17 @@ import WatchCard from "../components/WatchCard";
 import { motion } from "framer-motion";
 import { FaBatteryFull, FaLink, FaGem, FaMagic } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import './homePage.css'
 
 const HomePage = () => {
+  const navigate = useNavigate();
+
+  const handleLearnMore = () => {
+    navigate("/productDetail/phone-3a-pro");
+  };
+
+
   const features = [
     {
       icon: <FaMagic />,
@@ -145,7 +153,7 @@ const HomePage = () => {
           <p>
             A new era of simplicity and performance. With refined design, better cameras, and a smarter interface – this is Nothing’s most complete phone yet.
           </p>
-          <button className="explore_btn">Learn More</button>
+          <button className="explore_btn" onClick={handleLearnMore}>Learn More</button>
         </div>
 
         <video
@@ -163,7 +171,7 @@ const HomePage = () => {
         <div className="video_overlay_text">
           <h2>Phone (3a) Pro</h2>
           <p>Power. Precision. Nothing more.</p>
-          <button className="explore_btn">Explore</button>
+          <button className="explore_btn" onClick={handleLearnMore}>Learn More</button>
         </div>
 
       </section>
